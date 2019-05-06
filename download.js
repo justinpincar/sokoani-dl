@@ -29,6 +29,9 @@ const main = async () => {
       const $ = cheerio.load(article.data);
 
       const mp3Url = $("a[href*='.mp3']").attr('href');
+      if (!mp3Url) {
+        continue;
+      }
       console.log(`Will download: ${mp3Url}`);
       promises.push(download(mp3Url, 'mp3s'));
     }
