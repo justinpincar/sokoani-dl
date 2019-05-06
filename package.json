@@ -1,0 +1,15 @@
+{
+  "name": "sokonani",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "download": "node download.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Justin Pincar <justinpincar@gmail.com> (https://www.linkedin.com/in/justinpincar)",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.3",
+    "download": "^7.1.0"
+  }
+}
